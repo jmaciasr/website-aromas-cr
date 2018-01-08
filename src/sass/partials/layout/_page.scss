@@ -1,0 +1,38 @@
+section {
+	padding-bottom: $space-large;
+	
+	@include query(1024px) {
+		padding-bottom: $space-xx-large;
+	} 
+}
+
+.l-content {
+  margin: 0 auto;
+  width: 65%;
+}
+
+.l-group {
+  @include micro-clearfix;
+}
+
+.group {
+  @include micro-clearfix;
+  padding: 0 $space-base;
+  margin: 0 auto;
+  max-width: 1200px;
+  @include query(860px) {
+    padding: 0 $space-base;
+  }
+  @include query(425px) {
+    padding:0 $space-medium;
+  } 
+}
+
+.make-hidden {
+  display: none;
+}
+
+.make-visible {
+  display: initial;
+}
+

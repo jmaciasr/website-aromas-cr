@@ -1,0 +1,54 @@
+.btn {
+	padding: $space-base;
+	margin: $space-out-small 0;
+	transition: all .5s;
+}
+
+.btn--principal {
+    background-color: $color-contrast;
+    &:hover {
+        background-color: $color-base;
+		border: none; 
+    }
+}
+
+.btn--secundary {
+    border: 2px solid white;
+
+    &:hover {
+		color: $color-base;
+		border-color: $color-base;
+    }
+}
+
+// .btn--small {
+    
+// }
+
+// .btn--invert {
+	
+
+//     &:hover {
+		
+//     }
+// }
+
+.btn-form {
+	background-color: $color-contrast;			
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-family: $font-family-base;
+	margin: $space-small 0;
+	padding: $space-base;
+	transition: background-color 1s; 
+	width: 40%;
+	
+	&:hover {
+	background-color: $color-base;
+	}
+}
+
+.btn--sended-form {
+	padding: $space-xx-large 0;
+}

@@ -1,0 +1,49 @@
+textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+form {
+	padding: $space-small;
+	background-color: rgba(0, 0, 0, .2);
+
+	@include query(720px) {
+		width: 50%
+	}
+	@include query(1024px) {
+		width: 40%
+	}
+}
+
+input,
+textarea {
+	color: #fff;
+	background-color: transparent;
+	border: 1px solid #fff;
+	display: block;
+	font-size: 16px;
+	margin-bottom: $space-medium;
+	width: 100%;
+}
+
+label,
+button {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+button {
+	background-color: $color-contrast;			
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-family: $font-family-base;
+	margin: $space-small 0;
+	padding: $space-base;
+	transition: background-color 1s; 
+	width: 40%;
+	
+	&:hover {
+	background-color: $color-base;
+	}
+}

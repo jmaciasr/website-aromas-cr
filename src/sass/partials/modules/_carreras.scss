@@ -1,0 +1,63 @@
+.careers {
+	background: url("../img/carreras.jpg") no-repeat fixed top / cover;
+}
+
+.careers-home {
+	background: url("../img/carreras.jpg") no-repeat top / cover;
+}
+
+.careers-info {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+	
+	@include query(1024px) {
+    	justify-content: space-between;
+  	} 
+}
+
+
+.careers-info__square {
+	background-color: rgba(0, 155, 219, .4);
+	margin-top: $space-out-small;
+	padding: $space-medium $space-base;
+	transition: all 1s; 
+	width: 320px;
+
+	&:hover {
+		background-color: rgba(2, 54, 76, .4);
+	}	
+}
+
+
+.careers-info__icon {
+	display: block;
+	margin: 0 auto;
+	width: 70px;
+}
+
+.careers-info__icon-content {
+	&:hover {
+		path {
+			transition: all 1s; 
+			cursor: pointer;
+			stroke-dasharray: 1000;
+			stroke-dashoffset: 1000;
+		  	animation: dash 5s linear forwards;
+		  	//fill: $color-base;
+		}
+	}
+}
+
+.download-info {
+	text-align: center;
+	margin-top: $space-out-medium;
+
+	p {
+		font-size: 20px;
+
+		@include query(425px) {
+			font-size: 24px;
+		}
+	}
+}

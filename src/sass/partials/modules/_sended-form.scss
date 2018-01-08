@@ -1,0 +1,23 @@
+.sended-form {
+	background-color: $color-contrast;
+	text-align: center;
+
+	p {
+		padding: $space-base;
+		margin: 0;
+	}
+}
+
+.back {
+	display: inline-block;
+	width: 50%;
+	height: 100vh;
+}
+
+.back-index {
+	background: url("../img/back-index.jpg") no-repeat top / cover;
+}
+
+.back-careers {
+	background: url("../img/back-careers.jpg") no-repeat top / cover;
+}

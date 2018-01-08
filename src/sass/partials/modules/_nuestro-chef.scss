@@ -1,0 +1,15 @@
+.our-chef {
+	background: url("../img/nuestro-chef-1.jpg") no-repeat center / cover;
+	
+	@include query(860px) {
+		background-image: url("../img/nuestro-chef-2.jpg")	
+	}
+}
+
+.our-chef__content {
+
+	@include query(860px) {
+		float: right;
+		width: 50%;	
+	}
+}
